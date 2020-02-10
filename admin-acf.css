@@ -1,0 +1,7 @@
+.acf-relationship .selection .values, .acf-relationship .selection .choices {
+  width: 100% !important;
+}
+
+ul.acf-bl.list.values-list.ui-sortable {
+  height: 100% !important;
+}
