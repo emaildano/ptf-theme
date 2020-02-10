@@ -28,7 +28,10 @@
 					print_r($beersByBrew);
 					echo "</pre>";
 					?>
-					<span class="origin">Origin: <strong><?php echo $beersByBrew[0]->getOrigin(); ?></strong></span>
+
+					<?php if ($beersByBrew[0] !== null) { ?>
+						<span class="origin">Origin: <strong><?php echo $beersByBrew[0]->getOrigin(); ?></strong></span>
+					<?php } ?>
 				</div>
 				<ul class="the-tap-list">
 				
