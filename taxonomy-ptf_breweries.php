@@ -23,7 +23,6 @@
 						</a> 
 						<span class="tap-list-name"><?php echo $wp_query->queried_object->name; ?></span>
 					</h2>
-					<span class="origin">Origin: <strong><?php echo $beersByBrew[0]->getOrigin(); ?></strong></span>
 				</div>
 				<ul class="the-tap-list">
 				
