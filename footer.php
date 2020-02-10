@@ -36,6 +36,7 @@
 		</footer>
 	</div> <!--! end of #container -->
 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script defer src="<?php bloginfo( 'template_directory' ); ?>/js/plugins.js?v=2"></script>
 	<script defer src="<?php bloginfo( 'template_directory' ); ?>/js/script.js?v=2.0.3"></script>
 
