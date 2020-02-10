@@ -122,12 +122,12 @@ if($eventToday == TRUE) { ?>
 					<?php
 						// This changes the embed link to get rid of the pop-up bubble, no matter how the user may have entered it
 						$urlParsed = split_url($thisBar->getEmbedLink());
-						parse_str($urlParsed[query], $queryArray);
+						parse_str($urlParsed['query'], $queryArray);
 						$queryArray['iwloc'] = 'near';
 						$queryArray['addr'] = '';
 						$fixedQuery = urldecode(http_build_query($queryArray));
 						$finalQuery = str_replace('addr=', 'addr', $fixedQuery);
-						$urlParsed[query] = $finalQuery;
+						$urlParsed['query'] = $finalQuery;
 						$finalMapURL = join_url( $urlParsed );
 					?>
 					<div class="map-container a-google-map">

@@ -4,6 +4,7 @@ Template Name: Search Results: Events Page
 */
 ?>
 <?php
+
 	$currURL = curPageURL();
 	if ( isset($_GET['eventsByLetter']) ) {
 		$eventsByLetter = $_GET['eventsByLetter'];

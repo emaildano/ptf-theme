@@ -5,8 +5,9 @@ Template Name: Search Results: Bars Page
 ?>
 <?php
 
-	$barsByLetter = 'all';
-	$sort = true;
+	// $barsByLetter = '';
+	// $sort = '';
+	// $getAllBars = '';
 
 	$currURL = curPageURL();
 	if ( isset($_GET['barsByLetter']) ) {
@@ -18,7 +19,7 @@ Template Name: Search Results: Bars Page
 		}
 	} else {
 		if ( !isset($_GET['sortByUpdated']) ) {
-			$getAllBars = true;
+			$getAllBars = 'yes';
 		}
 	}
 	if ( isset($_GET['sortByUpdated']) ) {
