@@ -24,7 +24,7 @@
 	<meta property="og:title" content="<?php np_pageTitle(); ?>" /><!-- FB Open Graph biz, using some sensible defaults -->
 	<meta property="og:type" content="drink" />
 	<meta property="og:url" content="<?php echo get_permalink($post->ID); ?>" />
-	<meta property="og:image" content="//phillytapfinder.com/wp-content/themes/ptf-theme/img/ir_logo.png" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/img/ir_logo.png" />
 	<meta property="og:site_name" content="PhillyTapFinder.com" />
 	<?php $post_object = get_post( $post->ID ); // Get post content to use as description ?>
 	<meta property="og:description" content="<?php echo strip_tags($post_object->post_content); ?>" />
@@ -34,7 +34,7 @@
 	<meta property="og:title" content="<?php np_pageTitle(); ?>" /><!-- FB Open Graph biz, using some sensible defaults -->
 	<meta property="og:type" content="bar" />
 	<meta property="og:url" content="<?php echo get_permalink($post->ID); ?>" />
-	<meta property="og:image" content="//phillytapfinder.com/wp-content/themes/ptf-theme/img/ir_logo.png" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/img/ir_logo.png" />
 	<meta property="og:site_name" content="PhillyTapFinder.com" />
 	<meta property="og:description" content="<?php np_pageTitle(); ?>" />
 	<meta property="fb:admins" content="1216007741" />
@@ -43,7 +43,7 @@
 	<meta property="og:title" content="<?php echo get_bloginfo('name'); ?>" /><!-- FB Open Graph biz, using some sensible defaults -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="<?php echo get_bloginfo('url'); ?>" />
-	<meta property="og:image" content="//phillytapfinder.com/wp-content/themes/ptf-theme/img/ir_logo.png" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/img/ir_logo.png" />
 	<meta property="og:site_name" content="<?php echo get_bloginfo('name'); ?>" />
 	<meta property="og:description" content="<?php echo get_bloginfo('description'); ?>" />
 	<meta property="fb:admins" content="1216007741" />
