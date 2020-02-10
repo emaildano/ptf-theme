@@ -4,6 +4,10 @@ Template Name: Search Results: Bars Page
 */
 ?>
 <?php
+
+	$barsByLetter = 'all';
+	$sort = true;
+
 	$currURL = curPageURL();
 	if ( isset($_GET['barsByLetter']) ) {
 		$barsByLetter = $_GET['barsByLetter'];
@@ -194,7 +198,7 @@ Template Name: Search Results: Bars Page
 							</span>
 						<?php
 						// If the bar has an upcoming event, display an event icon.
-						if ($eventList[$Bar->getTitle()]) { ?>
+						if (isset($eventList[$Bar->getTitle()]) ? $eventList[$Bar->getTitle()] : '' ) { ?>
 							<span class="upcoming-event"></span>
 						<?php } ?>
 						</a>
