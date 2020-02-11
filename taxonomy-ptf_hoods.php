@@ -55,9 +55,7 @@
 					</div>
 					<?php } ?>
 					<div class="ad">
-						<script id="single-square-tmpl" type="text/x-jquery-tmpl">
-							<a class="display-ad-square" href="${ad_url}" title="${ad_title}" target="_blank"><img src="${ad_img}" width="${ad_width}" height="${ad_height}" alt="${ad_alt}" title="${ad_title}"/></a>
-						</script>
+						<?php if(function_exists('the_ad_group')) the_ad_group('18694'); ?>
 					</div>
 				</div>
 				<h3 class="tap-now">Craft Beer Bars in <?php echo $wp_query->queried_object->name; ?></h3>
