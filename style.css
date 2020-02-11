@@ -6,6 +6,32 @@ Author URI: http://newphilosophy.com
 Description: Official Wordpress theme for PhillyTapFinder.com.
 Version: 1.0
 */
+
+@font-face {
+  font-family: "Oswald", sans-serif;
+  src: url("fonts/oswald-regular-webfont.eot");
+  src: local("Oswald Regular"), local("Oswald-Regular"),
+    url("fonts/oswald-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/oswald-regular-webfont.woff") format("woff"),
+    url("fonts/oswald-regular-webfont.ttf") format("truetype"),
+    url("fonts/oswald-regular-webfont.svg#Oswald") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EntypoRegular";
+  src: url("fonts/entypo-webfont.eot");
+  src: url("fonts/entypo-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/entypo-webfont.woff") format("woff"),
+    url("fonts/entypo-webfont.ttf") format("truetype"),
+    url("fonts/entypo-webfont.svg#EntypoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 article,
 aside,
 details,
@@ -113,8 +139,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  _font-family: "courier new", monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 pre {
@@ -252,113 +277,6 @@ td {
   vertical-align: top;
 }
 
-/* Author Styles */
-
-@font-face {
-  font-family: "TeXGyreAdventorRegular";
-  src: url("fonts/texgyreadventor-regular-webfont.eot");
-  src: url("fonts/texgyreadventor-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/texgyreadventor-regular-webfont.woff") format("woff"),
-    url("fonts/texgyreadventor-regular-webfont.ttf") format("truetype"),
-    url("fonts/texgyreadventor-regular-webfont.svg#TeXGyreAdventorRegular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "TeXGyreAdventorItalic";
-  src: url("fonts/texgyreadventor-italic-webfont.eot");
-  src: url("fonts/texgyreadventor-italic-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/texgyreadventor-italic-webfont.woff") format("woff"),
-    url("fonts/texgyreadventor-italic-webfont.ttf") format("truetype"),
-    url("fonts/texgyreadventor-italic-webfont.svg#TeXGyreAdventorItalic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "TeXGyreAdventorBold";
-  src: url("fonts/texgyreadventor-bold-webfont.eot");
-  src: url("fonts/texgyreadventor-bold-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/texgyreadventor-bold-webfont.woff") format("woff"),
-    url("fonts/texgyreadventor-bold-webfont.ttf") format("truetype"),
-    url("fonts/texgyreadventor-bold-webfont.svg#TeXGyreAdventorBold")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "TeXGyreAdventorBoldItalic";
-  src: url("fonts/texgyreadventor-bolditalic-webfont.eot");
-  src: url("fonts/texgyreadventor-bolditalic-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/texgyreadventor-bolditalic-webfont.woff") format("woff"),
-    url("fonts/texgyreadventor-bolditalic-webfont.ttf") format("truetype"),
-    url("fonts/texgyreadventor-bolditalic-webfont.svg#TeXGyreAdventorBoldItalic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "AbelRegular";
-  src: url("fonts/abel-regular-webfont.eot");
-  src: url("fonts/abel-regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fonts/abel-regular-webfont.woff") format("woff"),
-    url("fonts/abel-regular-webfont.ttf") format("truetype"),
-    url("fonts/abel-regular-webfont.svg#AbelRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OswaldRegular";
-  src: url("fonts/oswald-regular-webfont.eot");
-  src: url("fonts/oswald-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/oswald-regular-webfont.woff") format("woff"),
-    url("fonts/oswald-regular-webfont.ttf") format("truetype"),
-    url("fonts/oswald-regular-webfont.svg#OswaldRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OswaldLight";
-  src: url("fonts/oswald-light-webfont.eot");
-  src: url("fonts/oswald-light-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fonts/oswald-light-webfont.woff") format("woff"),
-    url("fonts/oswald-light-webfont.ttf") format("truetype"),
-    url("fonts/oswald-light-webfont.svg#OswaldLight") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "EntypoRegular";
-  src: url("fonts/entypo-webfont.eot");
-  src: url("fonts/entypo-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fonts/entypo-webfont.woff") format("woff"),
-    url("fonts/entypo-webfont.ttf") format("truetype"),
-    url("fonts/entypo-webfont.svg#EntypoRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 html {
   /* background: url(img/bg_footer.jpg) repeat; */
 }
@@ -390,7 +308,7 @@ h4,
 h5,
 h6 {
   margin: 0px;
-  font-family: "ChunkFiveRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: normal;
 }
 h1 {
@@ -509,7 +427,8 @@ h6 {
 .module-header h3,
 .module h3 {
   text-transform: uppercase;
-  font-family: "OswaldLight", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   color: #fff;
   font-size: 14px;
   letter-spacing: 1px;
@@ -522,7 +441,8 @@ h6 {
   letter-spacing: 1px;
   color: #c81313;
   text-transform: uppercase;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   letter-spacing: 1px;
   padding: 0;
   margin: 0;
@@ -562,7 +482,8 @@ h6 {
 }
 
 .beers-on-tap h3 {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   color: #c61b00;
   font-size: 18px;
   float: left;
@@ -590,13 +511,13 @@ h6 {
 .beer-list a {
   color: #333;
   text-decoration: underline;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .featured-beer-brewery {
   margin-left: 50px;
   width: 350px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #333;
   line-height: 23px;
   font-size: 14px;
@@ -605,7 +526,8 @@ h6 {
 .feat-beer-brew-mod .single-button a {
   width: 100%;
   border-radius: 0;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -625,7 +547,7 @@ h6 {
   padding: 28px 0 0 0;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .module-content .feature-desc a {
@@ -648,7 +570,7 @@ h6 {
 .module-content h3 {
   color: #333;
   font-size: 22px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   margin-bottom: 12px;
 }
@@ -658,7 +580,7 @@ h6 {
   line-height: 20px;
   color: #333;
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .module-content-wrapper {
@@ -760,9 +682,9 @@ h6 {
   font-size: 24px;
   letter-spacing: 1px;
   color: #fff;
-  font-weight: normal;
+  font-weight: 300;
   text-align: center;
-  font-family: "OswaldLight", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 #main-search h1 em {
@@ -792,7 +714,7 @@ h6 {
 .home .input-holder label,
 #primary-search .input-holder label {
   top: 16px;
-  font-family: "Arial", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1206,7 +1128,8 @@ img.aligncenter {
   border: none;
   background: #b4af91;
   text-shadow: none;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1262,7 +1185,8 @@ img.aligncenter {
 
 .menu-footer-menu-container li {
   font-size: 16px;
-  font-family: "OswaldLight", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   display: block;
   float: left;
@@ -1305,7 +1229,7 @@ img.aligncenter {
 }
 
 .menu-social-menu-container li {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-style: italic;
   margin-right: 36px;
@@ -1429,7 +1353,7 @@ ul#horizontal-list li.email a {
   width: 100px;
   float: left;
   box-sizing: border-box;
-  font-family: "OswaldRegular";
+  font-family: "Oswald";
   font-size: 12px;
   letter-spacing: 1px;
   color: #fff;
@@ -1451,7 +1375,7 @@ ul#horizontal-list li.email a {
 footer ::-webkit-input-placeholder {
   color: #999;
   font-size: 9px;
-  font-family: "Arial", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding-top: 2px;
 }
 
@@ -1517,7 +1441,8 @@ footer :-ms-input-placeholder {
   padding: 0;
   display: block;
   float: left;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
   height: 98px;
@@ -1687,7 +1612,8 @@ footer :-ms-input-placeholder {
   float: left;
   display: block;
   color: #fff;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
   padding-top: 13px;
@@ -1879,7 +1805,8 @@ footer :-ms-input-placeholder {
 
 .tap-list h2 .who-serving,
 .tap-list h3 .who-serving {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   color: #333;
   font-style: normal;
@@ -2218,7 +2145,7 @@ footer :-ms-input-placeholder {
 
 .bar-events li.first {
   text-align: right;
-  font-family: "AbelRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -2231,7 +2158,8 @@ footer :-ms-input-placeholder {
 }
 
 .bar-events li.third {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   color: #c81313;
   text-transform: uppercase;
@@ -2248,7 +2176,7 @@ footer :-ms-input-placeholder {
 .tap-list h3.tap-now {
   display: block;
   float: none;
-  font-family: "AbelRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 24px;
   color: #333;
   text-align: center;
@@ -2327,12 +2255,13 @@ footer :-ms-input-placeholder {
   border-radius: 30px;
   text-align: center;
   line-height: 36px;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 
 .grid-list .serving-text {
-  font-family: "AbelRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #333;
   font-size: 16px;
   text-transform: uppercase;
@@ -2773,7 +2702,8 @@ body .fallback-h {
   clear: left;
   float: left;
   margin-left: 100px;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
@@ -2782,7 +2712,8 @@ body .fallback-h {
 .latest-blog h2 span.the-latest {
   font-size: 12px;
   line-height: 12px;
-  font-family: "OswaldLight", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 
 .latest-blog .latest-links {
@@ -2807,7 +2738,8 @@ body .fallback-h {
 
 .latest-blog h2 a {
   color: #fff;
-  font-family: "OswaldLight", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   display: block;
   height: 60px;
@@ -2885,7 +2817,8 @@ body .fallback-h {
   text-transform: uppercase;
   margin-bottom: 16px;
   margin-left: 22px;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 
 .mceTemp {
@@ -2956,13 +2889,14 @@ body .fallback-h {
 
 .panel-number h5 {
   margin-top: 12px;
-  font-family: "AbelRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #333;
   font-size: 16px;
 }
 
 .panel-number h5 span {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 11px;
 }
 
@@ -3140,7 +3074,7 @@ body .fallback-h {
     padding-top: 140px;
 }
 .entry-title {
-    font-family: 'OswaldRegular', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 */
 .error404,
@@ -3273,7 +3207,7 @@ Example markup
 }
 
 .reveal-modal .date {
-  font-family: "AbelRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 16px;
   background: url("img/mini-event-icon.png") 0 0 no-repeat;
@@ -3285,15 +3219,15 @@ Example markup
   font-size: 24px;
   color: #c81313;
   text-transform: uppercase;
-  font-family: "OswaldRegular", sans-serif;
-  /*letter-spacing: 1px;*/
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   margin-top: 6px;
 }
 
 .reveal-modal .event-description {
   text-align: left;
   margin: 8px 0 0 0;
-  font-family: "AbelRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 19px;
 }
@@ -3302,7 +3236,7 @@ Example markup
   position: absolute;
   top: 10px;
   right: 12px;
-  font-family: "AbelRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
 }
 
