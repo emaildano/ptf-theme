@@ -1,5 +1,9 @@
-<!DOCTYPE html>
-<html class="no-js" <?php language_attributes(); ?>>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" <?php language_attributes(); ?>> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<link rel="dns-prefetch" href="//ajax.googleapis.com" />
@@ -8,7 +12,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans|Oswald&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
-<body>
+<?php if ( is_tax( 'ptf_beer_style' ) ) { $taxID = $wp_query->queried_object->term_id; ?>
+<body <?php body_class(); ?> data-id="<?php echo $taxID; ?>">
+<?php } else if ( is_tax( 'ptf_hoods' ) ) { $taxID = $wp_query->queried_object->term_id; ?>
+<body <?php body_class(); ?> data-id="<?php echo $taxID; ?>">
+<?php } else { ?>
+<body <?php body_class(); ?> data-id="<?php echo $wp_query->post->ID; ?>">
+<?php } ?>
 	<div id="container">
 		<header id="main-header">
 			<div class="page-container">
