@@ -27,7 +27,9 @@ Template Name: Bar Detail Page
 							<a href="#" class="a-button"><span class="entypo">D</span>See Photos</a>
 						</div>
 					</div>
-					<div class="ad"></div>
+					<div class="ad">
+						<?php if(function_exists('the_ad_group')) the_ad_group('18694'); ?>
+					</div>
 				</div>
 				<h3 class="tap-now">On Tap</h3>
 				<ul class="grid-list clearfix">

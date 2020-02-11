@@ -27,7 +27,9 @@ Template Name: Tap Detail Page
 					<div class="style-text-container">
 						<p>Medium bodied and characterized by high carbonation and tangy varieties of hops that impart floral aromas and a crisp, bitter finish.</p>
 					</div>
-					<div class="ad"></div>
+					<div class="ad">
+						<?php if(function_exists('the_ad_group')) the_ad_group('18694'); ?>
+					</div>
 				</div>
 				<h3 class="tap-now hidden">On Tap</h3>
 				<ul class="grid-list clearfix">
