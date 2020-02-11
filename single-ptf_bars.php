@@ -159,7 +159,7 @@ if($eventToday == TRUE) { ?>
 					</div>
 
 					<div class="ad" style="<?php if($chalkboard){echo('display: none;');} ?>">
-						<?php if(function_exists('the_ad_group')) the_ad_group('18694'); ?>
+						<?php if(function_exists('the_ad_group')) the_ad_group('18693'); ?>
 					</div>
 				</div><!-- /.bar-map -->
 

@@ -41,7 +41,7 @@
 						<p><?php echo $wp_query->queried_object->description; ?></p>
 					</div>
 					<div class="ad">
-						<?php if(function_exists('the_ad_group')) the_ad_group('18694'); ?>
+						<?php if(function_exists('the_ad_group')) the_ad_group('18693'); ?>
 					</div>
 				</div>
 				<h3 class="tap-now">On Tap</h3>

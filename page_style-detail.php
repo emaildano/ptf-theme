@@ -27,7 +27,7 @@ Template Name: Style Detail Page
 						<p>Medium bodied and characterized by high carbonation and tangy varieties of hops that impart floral aromas and a crisp, bitter finish.</p>
 					</div>
 					<div class="ad">
-						<?php if(function_exists('the_ad_group')) the_ad_group('18694'); ?>
+						<?php if(function_exists('the_ad_group')) the_ad_group('18693'); ?>
 					</div>
 				</div>
 				<h3 class="tap-now">On Tap</h3>
