@@ -10,7 +10,6 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=02112017" />
 	<?php wp_head(); ?>
 </head>
 <?php

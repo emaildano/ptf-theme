@@ -36,9 +36,6 @@
 		</footer>
 	</div> <!--! end of #container -->
 
-	<script defer src="<?php bloginfo( 'template_directory' ); ?>/js/plugins.js?v=2"></script>
-	<script defer src="<?php bloginfo( 'template_directory' ); ?>/js/script.js?v=2.0.3"></script>
-
 	<!--[if lt IE 7 ]>
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
 	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>

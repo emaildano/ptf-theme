@@ -212,6 +212,17 @@ function sort_query_acf( $args ) {
     
 }
 
+
+// Theme Styles
+function ptf_assets() {
+  wp_enqueue_style( 'ptf-styles', get_stylesheet_uri() );
+  wp_enqueue_script( 'ptf-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '2.0.0', true );
+  wp_enqueue_script( 'ptf-scripts', get_template_directory_uri() . '/js/script.js', array(), '2.0.3', true );
+  wp_enqueue_script( 'ptf-scripts', get_template_directory_uri() . '/js/script.js', array(), '2.0.3', true );
+}
+
+add_action( 'wp_enqueue_scripts', 'ptf_assets' );
+
 // Update CSS within in Admin
 add_action('admin_enqueue_scripts', 'admin_style');
 function admin_style() {
