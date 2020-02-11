@@ -90,7 +90,7 @@
 					<a href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>" class="ir"><?php bloginfo( 'name' ); ?></a>
 				</h1>
 				<div class="ad-leaderboard">
-					<?php if(function_exists('the_ad_group')) the_ad_group('18693'); ?>
+					<?php if(function_exists('the_ad_group')) the_ad_group('18692'); ?>
 				</div>
 			</div>
 		</header>
