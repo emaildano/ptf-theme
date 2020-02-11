@@ -6,58 +6,11 @@
 <!--[if gt IE 9]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<link rel="dns-prefetch" href="//ajax.googleapis.com" /><!-- A DNS "handshake" to speed things up -->
-	<!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/b/378 -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>
-		<?php np_pageTitle(); ?>
-	</title>
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
-
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=02112017" />
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
+	<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-
-	<?php if ( is_singular('ptf_beers') ) { ?>
-	<meta property="og:title" content="<?php np_pageTitle(); ?>" /><!-- FB Open Graph biz, using some sensible defaults -->
-	<meta property="og:type" content="drink" />
-	<meta property="og:url" content="<?php echo get_permalink($post->ID); ?>" />
-	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/img/ir_logo.png" />
-	<meta property="og:site_name" content="PhillyTapFinder.com" />
-	<?php $post_object = get_post( $post->ID ); // Get post content to use as description ?>
-	<meta property="og:description" content="<?php echo strip_tags($post_object->post_content); ?>" />
-	<meta property="fb:admins" content="1216007741" />
-
-	<?php } else if ( is_singular('ptf_bars') ) { ?>
-	<meta property="og:title" content="<?php np_pageTitle(); ?>" /><!-- FB Open Graph biz, using some sensible defaults -->
-	<meta property="og:type" content="bar" />
-	<meta property="og:url" content="<?php echo get_permalink($post->ID); ?>" />
-	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/img/ir_logo.png" />
-	<meta property="og:site_name" content="PhillyTapFinder.com" />
-	<meta property="og:description" content="<?php np_pageTitle(); ?>" />
-	<meta property="fb:admins" content="1216007741" />
-
-	<?php } else { ?>
-	<meta property="og:title" content="<?php echo get_bloginfo('name'); ?>" /><!-- FB Open Graph biz, using some sensible defaults -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="<?php echo get_bloginfo('url'); ?>" />
-	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/img/ir_logo.png" />
-	<meta property="og:site_name" content="<?php echo get_bloginfo('name'); ?>" />
-	<meta property="og:description" content="<?php echo get_bloginfo('description'); ?>" />
-	<meta property="fb:admins" content="1216007741" />
-	<?php } ?>
-	<link rel="alternate" type="application/rss+xml" title="RSS Feed fo <?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>" /><!--RSS link-->
-
-	<script>
-		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-		ga('create', 'UA-16618962-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-	<script async src='https://www.google-analytics.com/analytics.js'></script>
-	<script src="<?php bloginfo( 'template_directory' ); ?>/js/libs/modernizr-2.0.6.min.js"></script>
-
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=02112017" />
 	<?php wp_head(); ?>
 </head>
 <?php

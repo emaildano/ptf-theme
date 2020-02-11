@@ -35,6 +35,7 @@ add_action('init', 'create_my_taxonomies', 0);
 
 // Featured Images/Post Thumbnails
 add_theme_support('post-thumbnails');
+add_theme_support( 'title-tag' );
 set_post_thumbnail_size(120, 120, true);
 add_image_size('feat-bar-thumbnail', 160, 166, true); // feat bar size
 add_image_size('feat-beer-thumbnail', 130, 130, true); // feat beer size
