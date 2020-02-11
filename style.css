@@ -14,7 +14,9 @@ Version: 1.0
     url("fonts/oswald-regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("fonts/oswald-regular-webfont.woff") format("woff"),
     url("fonts/oswald-regular-webfont.ttf") format("truetype"),
-    url("fonts/oswald-regular-webfont.svg#Oswald") format("svg");
+    url("fonts/oswald-regular-webfont.svg#Oswald") format("svg"),
+    url("https://fonts.gstatic.com/s/oswald/v30/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYySUhiCXAA.woff")
+      format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -511,13 +513,13 @@ h6 {
 .beer-list a {
   color: #333;
   text-decoration: underline;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .featured-beer-brewery {
   margin-left: 50px;
   width: 350px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #333;
   line-height: 23px;
   font-size: 14px;
@@ -547,7 +549,7 @@ h6 {
   padding: 28px 0 0 0;
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .module-content .feature-desc a {
@@ -570,7 +572,7 @@ h6 {
 .module-content h3 {
   color: #333;
   font-size: 22px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin-bottom: 12px;
 }
@@ -580,7 +582,7 @@ h6 {
   line-height: 20px;
   color: #333;
   margin-top: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .module-content-wrapper {
@@ -714,7 +716,7 @@ h6 {
 .home .input-holder label,
 #primary-search .input-holder label {
   top: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1229,7 +1231,7 @@ img.aligncenter {
 }
 
 .menu-social-menu-container li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-style: italic;
   margin-right: 36px;
@@ -1375,7 +1377,7 @@ ul#horizontal-list li.email a {
 footer ::-webkit-input-placeholder {
   color: #999;
   font-size: 9px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-top: 2px;
 }
 
