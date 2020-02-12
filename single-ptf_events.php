@@ -46,7 +46,7 @@
 					<div class="event-description-wrapper">
 						<div class="event-description">
 							<span><em>Event Description</em></span>
-							<?php get_the_content(); ?>
+							<?php the_content(); ?>
 						</div>
 
 						<div class="sharin clearfix">
