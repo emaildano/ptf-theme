@@ -293,7 +293,7 @@ html.backgroundsize .bg-container {
 }
 
 html .bg-container {
-  background: #2b4f54 url(img/bg.jpg) no-repeat 50% fixed;
+  background: #2b4f54 url('img/bg.jpg') no-repeat 50% fixed !important;
 }
 
 .bg-container {
