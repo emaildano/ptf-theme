@@ -283,17 +283,15 @@ html {
   /* background: url(img/bg_footer.jpg) repeat; */
 }
 
-html.backgroundsize .bg-container {
+/* html.backgroundsize .bg-container {
   background: #2b4f54 url(img/bg_cover_v2.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   min-width: 1024px;
-}
+} */
 
 html .bg-container {
-  background: #2b4f54 url('img/bg.jpg') no-repeat 50% fixed !important;
+  background: #2b4f54 url("img/bg.jpg") no-repeat 50% fixed !important;
+  background-size: cover;
 }
 
 .bg-container {
