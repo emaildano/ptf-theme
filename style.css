@@ -1739,6 +1739,12 @@ footer :-ms-input-placeholder {
   margin: 0 22px;
 }
 
+.ads.three-up {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
 .an-ad {
   width: 300px;
   height: 250px;
