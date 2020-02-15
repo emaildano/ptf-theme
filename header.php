@@ -6,6 +6,7 @@
 <!--[if gt IE 9]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=980, initial-scale=1">
 	<link rel="dns-prefetch" href="//ajax.googleapis.com" />
 	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
 	<link rel="profile" href="https://gmpg.org/xfn/11">
