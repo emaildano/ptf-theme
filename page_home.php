@@ -58,22 +58,12 @@ Template Name: Home Page
 					<div class="module-headers">
 						<div class="module-header first">
 							<h3>Featured Bar</h3>
-
-							<script>
-								console.log("Featured Bar: <?php echo $FeatBar[0]->getTitle(); ?>");
-							  window.ga('send', 'event', 'Ad', 'Viewed', "Featured Bar: <?php echo $FeatBar[0]->getTitle(); ?>");
-							</script>
-
 							<h2><?php echo $FeatBar[0]->getTitle(); ?></h2>
 							<small><?php echo $FeatBar[0]->getAddress(); ?></small>
 						</div>
 						<div class="module-header">
 							<h3>Featured Brewery</h3>
 							<h2><?php echo $beerTitle; ?></h2>
-							<script>
-								console.log("Featured Brewery: <?php echo $beerTitle; ?>");
-								window.ga('send', 'event', 'Ad', 'Viewed', "Featured Brewery: <?php echo $beerTitle; ?>");
-							</script>
 							<small><?php echo $FeatBeer->payload[0]->getOrigin(); ?></small>
 						</div>
 					</div><!-- /.module-headers -->

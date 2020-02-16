@@ -101,42 +101,6 @@ jQuery(document).ready(function($) {
     }
   });
 
-  // Tracks square ad click
-  $(".display-ad-square").live("click", function() {
-    console.log("Square ad clicked: " + $(this).attr("title"));
-    window.ga("send", "event", "Ad", "Clicked", $(this).attr("title"));
-  });
-
-  // Tracks leaderboard ad click
-  $(".display-ad-leaderboard").live("click", function() {
-    console.log("Leaderboard clicked: " + $(this).attr("title"));
-    window.ga("send", "event", "Ad", "Clicked", $(this).attr("title"));
-  });
-
-  $(".homepage-featured-bar").live("click", function(e) {
-    console.log("Featured bar clicked: " + $(this).data("featured-bar-title"));
-    window.ga(
-      "send",
-      "event",
-      "Ad",
-      "Clicked",
-      "Featured Bar: " + $(this).data("featured-bar-title")
-    );
-  });
-
-  $(".homepage-featured-brewery").live("click", function(e) {
-    console.log(
-      "Featured brewery clicked: " + $(this).data("featured-brewery-title")
-    );
-    window.ga(
-      "send",
-      "event",
-      "Ad",
-      "Clicked",
-      "Featured Brewery: " + $(this).data("featured-brewery-title")
-    );
-  });
-
   function runTicker() {
     tickerCounter++;
     var howMany = $(".links-pane a")
