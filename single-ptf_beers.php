@@ -11,7 +11,6 @@
 		$beerStyles = $thisBeer->getStyle();
 		$beerOrigin = $thisBeer->getOrigin();
 		$beerBrewery = $thisBeer->getBrewery();
-		print_r($beerBrewery);
 		$Bars = new Bar();
 		$numServe = $Bars->getBarCountByBeer($thisBeer->getId());
 		?>
