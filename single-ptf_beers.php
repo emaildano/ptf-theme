@@ -11,6 +11,7 @@
 		$beerStyles = $thisBeer->getStyle();
 		$beerOrigin = $thisBeer->getOrigin();
 		$beerBrewery = $thisBeer->getBrewery();
+		print_r($beerBrewery);
 		$Bars = new Bar();
 		$numServe = $Bars->getBarCountByBeer($thisBeer->getId());
 		?>
@@ -40,7 +41,7 @@
 					<?php } ?>
 
 					<br />Origin: <strong><?php echo $beerOrigin; ?></strong>
-					<br />Brewery: <strong><?php echo $beerBrewery[0]->name; ?></strong>
+					<br />Brewery: <strong><a href="<?php echo get_term_link($beerBrewery[0]->term_id); ?>"><?php echo $beerBrewery[0]->name; ?></strong></a>
 				</span>
 			</div>
 			<div class="bar-map clearfix">
