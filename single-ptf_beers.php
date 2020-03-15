@@ -8,11 +8,15 @@
 
 		<?php
 		$thisBeer = new Beer($post->ID);
+		$beerTitle = $thisBeer->getTitle();
 		$beerStyles = $thisBeer->getStyle();
 		$beerOrigin = $thisBeer->getOrigin();
 		$beerBrewery = $thisBeer->getBrewery();
+		$beerPrimaryStyle = $beerStyles[0]->name;
+		$beerPrimaryBrewery = $beerBrewery[0]->name;
 		$Bars = new Bar();
 		$numServe = $Bars->getBarCountByBeer($thisBeer->getId());
+
 		?>
 
 		<div class="tap-list">
@@ -22,7 +26,7 @@
 					<span class="who-serving">
 						<span class="number-serving"><?php echo $numServe; ?></span> <span class="serving-text">Bar(s) Serving</span>
 					</span>
-					<span class="tap-list-name"><?php echo truncate_it(30, $thisBeer->getTitle()); ?></span>
+					<span class="tap-list-name"><?php echo truncate_it(30, $beerTitle); ?></span>
 				</h2>
 				<span class="origin">Style:
 
@@ -50,7 +54,7 @@
 					if ($beerDescription != '') {
 						echo '<p>' . $beerDescription . '</p>';
 					} else {
-						echo '<p class="fallback"><em>This beer\'s description is not currently available.</em></p>';
+						echo $beerTitle . ' is a ' . $beerPrimaryStyle . ' style draft brewed by ' . $beerPrimaryBrewery . ' in ' . $beerOrigin . '.';
 					}
 					?>
 				</div>
