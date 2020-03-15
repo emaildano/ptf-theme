@@ -42,9 +42,8 @@
 									echo ', ';
 								} ?>
 					<?php } ?>
-
-					<br />Origin: <strong><?php echo $beerOrigin; ?></strong>
-					<br />Brewery: <strong><a href="<?php echo get_term_link($beerBrewery[0]->term_id); ?>"><?php echo $beerBrewery[0]->name; ?></strong></a>
+					<?php if ($beerOrigin) { echo '<br />Origin: <strong>'. $beerOrigin .'</strong>'; } ?>
+					<?php if ($beerBrewery) { echo '<br />Brewery: <strong><a href="'. get_term_link($beerBrewery[0]->term_id) .'">'. $beerBrewery[0]->name .'</strong></a>'; } ?>
 				</span>
 			</div>
 			<div class="bar-map clearfix">
@@ -54,9 +53,12 @@
 					if ($beerDescription != '') {
 						echo '<p>' . $beerDescription . '</p>';
 					} else {
-						echo $beerTitle . ' is a ' . $beerPrimaryStyle . ' style draft brewed by ' . $beerPrimaryBrewery . ' in ' . $beerOrigin . '.';
-					}
-					?>
+						if ($beerTitle && $beerPrimaryStyle && $beerPrimaryBrewery && $beerOrigin) {
+							echo $beerTitle . ' is a ' . $beerPrimaryStyle . ' style draft brewed by ' . $beerPrimaryBrewery . ' in ' . $beerOrigin . '.';	
+						} else {
+							echo '<p class="fallback"><em>This beer\'s description is not currently available.</em></p>';
+						}
+					} ?>
 				</div>
 				<div class="ad">
 					<?php if (function_exists('the_ad_group')) the_ad_group('18693'); ?>
