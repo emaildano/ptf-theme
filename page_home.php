@@ -10,7 +10,6 @@ Template Name: Home Page
 		<?php while ( have_posts() ) : the_post(); // Start Loop ?>
 			<?php echo get_the_content(); ?>
 		<?php endwhile; // End the loop. Whew. ?>
-			<?php get_template_part('template_notice'); ?>
 			<?php get_template_part('template_homepage-nav'); ?>
 			<?php get_template_part('template_search-box'); ?>
 		</div>

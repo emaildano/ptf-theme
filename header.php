@@ -39,3 +39,5 @@
 			</div>
 		</header>
 		<div class="bg-container">
+
+		<?php get_template_part('template_notice'); ?>
